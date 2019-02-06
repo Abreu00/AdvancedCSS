@@ -318,7 +318,8 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg);
-  position: relative; }
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.6); }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -353,6 +354,20 @@ body {
   .story:hover .story__image {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%); }
+
+.bg-video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .header {
   height: 95vh;
@@ -422,4 +437,4 @@ body {
 
 .section-stories {
   padding: 15rem 0;
-  background-color: #f7f7f7; }
+  position: relative; }
